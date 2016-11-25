@@ -5,6 +5,8 @@ from selenium import webdriver
 from bs4 import BeautifulSoup
 from time import sleep
 
+from selenium.webdriver import DesiredCapabilities
+
 county="King%20county"
 year_span = "2011-2014"
 link = "https://familysearch.org/search/collection/results?count=20&query=%2Bdeath_place%3A%22"+county+"%22~%20%2Bdeath_year%3A"+year_span+"~&collection_id=1202535"
@@ -14,7 +16,12 @@ print "pause"
 
 class TaleoJobScraper(object):
     def __init__(self):
-        self.driver = webdriver.PhantomJS(service_args=['--ignore-ssl-errors=true', '--ssl-protocol=TLSv1'])
+        dcap = dict(DesiredCapabilities.PHANTOMJS)
+        dcap["phantomjs.page.settings.userAgent"] = (
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/53 "
+        )
+        #self.driver = webdriver.PhantomJS(desired_capabilities=dcap, service_args=['--ignore-ssl-errors=true', '--ssl-protocol=TLSv1'])
+        self.driver = webdriver.PhantomJS(desired_capabilities=dcap, service_args=['--ignore-ssl-errors=true', '--ssl-protocol=TLSv1'], executable_path=r"C:\Users\William\Downloads\phantomjs-2.1.1-windows\phantomjs-2.1.1-windows\bin\phantomjs.exe")
         self.driver.set_window_size(1120, 550)
 
     def scrape_job_links(self):

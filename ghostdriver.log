@@ -1,13 +1,12 @@
-[INFO  - 2016-11-23T20:50:21.220Z] GhostDriver - Main - running on port 52694
-[INFO  - 2016-11-23T20:50:22.151Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2016-11-23T20:50:22.151Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.customHeaders:  - {}
-[INFO  - 2016-11-23T20:50:22.151Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2016-11-23T20:50:22.151Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 73861b10-b1be-11e6-8e35-b3ad7388d328
-[INFO  - 2016-11-23T20:54:22.586Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-1: An attempt was made to use an object that is not, or is no longer, usable.
+[INFO  - 2016-11-24T04:19:51.629Z] GhostDriver - Main - running on port 52417
+[INFO  - 2016-11-24T04:19:52.685Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/53 ","webSecurityEnabled":true}
+[INFO  - 2016-11-24T04:19:52.685Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.customHeaders:  - {}
+[INFO  - 2016-11-24T04:19:52.685Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"},"phantomjs.page.settings.userAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/53 "}
+[INFO  - 2016-11-24T04:19:52.685Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 3f372680-b1fd-11e6-9b04-7595fcddfb5e
+[ERROR - 2016-11-24T04:19:54.416Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:22.980Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:54.417Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -44,10 +43,10 @@
   (anonymous function) (https://assets.adobedtm.com/05c94072b1046aef0dc9b195809b4d2429a0d30a/mbox-contents-a85403ed97d350cfbf5b8b3bcb6e204918389d5e.js:14)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.106Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:54.488Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.106Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:54.489Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -56,15 +55,15 @@
   get (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   download (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
- [INFO  - 2016-11-23T20:51:19.534Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
+  process (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
+  ensure (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.422Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.076Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.422Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.076Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -79,10 +78,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/angular/ComboViewer/ComboViewerPopup-f7ed39c49d2a3348b13abef3d7db6c02.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.688Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.528Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.688Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.528Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -98,10 +97,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   (anonymous function) (https://familysearch.org/search/collection/results?count=20&query=%2Bdeath_place%3A%22King%20county%22~%20%2Bdeath_year%3A2011-2014~&collection_id=1202535:190)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.689Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.529Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.690Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.529Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -117,10 +116,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   (anonymous function) (https://familysearch.org/search/collection/results?count=20&query=%2Bdeath_place%3A%22King%20county%22~%20%2Bdeath_year%3A2011-2014~&collection_id=1202535:190)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.690Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.530Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.690Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.530Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -136,10 +135,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   (anonymous function) (https://familysearch.org/search/collection/results?count=20&query=%2Bdeath_place%3A%22King%20county%22~%20%2Bdeath_year%3A2011-2014~&collection_id=1202535:190)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.691Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.530Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.691Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.530Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -155,10 +154,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   (anonymous function) (https://familysearch.org/search/collection/results?count=20&query=%2Bdeath_place%3A%22King%20county%22~%20%2Bdeath_year%3A2011-2014~&collection_id=1202535:190)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.691Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.531Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.691Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.531Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -174,10 +173,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   (anonymous function) (https://familysearch.org/search/collection/results?count=20&query=%2Bdeath_place%3A%22King%20county%22~%20%2Bdeath_year%3A2011-2014~&collection_id=1202535:190)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.692Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.532Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.692Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.532Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -193,10 +192,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   (anonymous function) (https://familysearch.org/search/collection/results?count=20&query=%2Bdeath_place%3A%22King%20county%22~%20%2Bdeath_year%3A2011-2014~&collection_id=1202535:190)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.692Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.533Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.693Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.533Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -212,10 +211,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   (anonymous function) (https://familysearch.org/search/collection/results?count=20&query=%2Bdeath_place%3A%22King%20county%22~%20%2Bdeath_year%3A2011-2014~&collection_id=1202535:190)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.693Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.534Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.693Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.534Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -231,10 +230,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   (anonymous function) (https://familysearch.org/search/collection/results?count=20&query=%2Bdeath_place%3A%22King%20county%22~%20%2Bdeath_year%3A2011-2014~&collection_id=1202535:190)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.694Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.535Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.694Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.535Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -250,10 +249,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   (anonymous function) (https://familysearch.org/search/collection/results?count=20&query=%2Bdeath_place%3A%22King%20county%22~%20%2Bdeath_year%3A2011-2014~&collection_id=1202535:190)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.694Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.536Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.694Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.536Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -269,10 +268,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   (anonymous function) (https://familysearch.org/search/collection/results?count=20&query=%2Bdeath_place%3A%22King%20county%22~%20%2Bdeath_year%3A2011-2014~&collection_id=1202535:190)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.695Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.536Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.695Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.536Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -288,10 +287,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   (anonymous function) (https://familysearch.org/search/collection/results?count=20&query=%2Bdeath_place%3A%22King%20county%22~%20%2Bdeath_year%3A2011-2014~&collection_id=1202535:190)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.695Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.537Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.695Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.537Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -307,10 +306,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   (anonymous function) (https://familysearch.org/search/collection/results?count=20&query=%2Bdeath_place%3A%22King%20county%22~%20%2Bdeath_year%3A2011-2014~&collection_id=1202535:190)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.696Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.538Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.696Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.538Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -326,10 +325,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   (anonymous function) (https://familysearch.org/search/collection/results?count=20&query=%2Bdeath_place%3A%22King%20county%22~%20%2Bdeath_year%3A2011-2014~&collection_id=1202535:190)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.696Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.539Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.696Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.539Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -345,10 +344,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   (anonymous function) (https://familysearch.org/search/collection/results?count=20&query=%2Bdeath_place%3A%22King%20county%22~%20%2Bdeath_year%3A2011-2014~&collection_id=1202535:190)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.697Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.540Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.697Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.540Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -364,10 +363,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   (anonymous function) (https://familysearch.org/search/collection/results?count=20&query=%2Bdeath_place%3A%22King%20county%22~%20%2Bdeath_year%3A2011-2014~&collection_id=1202535:190)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.880Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.803Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.880Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.803Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -381,10 +380,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   f (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.881Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.804Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.881Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.804Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -398,10 +397,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   f (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.881Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.805Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.882Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.805Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -415,10 +414,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   f (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.882Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.806Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.882Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.806Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -432,10 +431,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   f (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.882Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.806Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.883Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.806Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -449,10 +448,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   f (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.909Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.856Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.909Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.856Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -466,10 +465,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   f (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.910Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.858Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.910Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.858Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -483,10 +482,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   f (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.910Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.861Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.910Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.861Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -500,10 +499,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   f (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.911Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.917Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.911Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.917Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -517,10 +516,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   f (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.935Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.917Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.935Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.917Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -534,10 +533,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   f (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.935Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.918Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.935Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.918Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -551,10 +550,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   f (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.935Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.919Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.935Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.919Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -568,10 +567,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   f (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.936Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.921Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.936Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.922Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -585,10 +584,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   f (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.937Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:56.922Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.938Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:56.922Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -602,27 +601,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   f (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.938Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:57.081Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:23.938Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
-  b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
-  (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
-  open (:0)
-  open (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
-  sendViaXHR (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
-  get (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
-  (anonymous function) (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
-  download (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
-  (anonymous function) (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
-  g (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
-  f (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:24.006Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:24.006Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:57.081Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -657,10 +639,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:24.007Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:57.083Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:24.007Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:57.083Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -695,10 +677,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:24.008Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:57.084Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:24.008Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:57.084Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -733,10 +715,10 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:24.072Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2016-11-24T04:19:57.176Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:24.072Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
+[ERROR - 2016-11-24T04:19:57.176Z] Session [3f372680-b1fd-11e6-9b04-7595fcddfb5e] - page.onError - stack:
   b (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
   open (:0)
@@ -762,55 +744,337 @@ inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   (anonymous function) (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   execute (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
   l (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
-  (anonymous function) (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
-  j (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
-  (anonymous function) (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
-  j (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
-  (anonymous function) (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
-  j (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
-  (anonymous function) (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
-  downloadDependencies (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
-  (anonymous function) (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
-  (anonymous function) (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
-  _next (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
-  (anonymous function) (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
-  (anonymous function) (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b[INFO  - 2016-11-23T20:55:14.505Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-tps://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
-  (anonymous function) (https://edge.fscdn.org/assets/js/inject_0.7.1-de55c0ead9bd95d08e98b9cb493123a0.js:1)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:24.079Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.mark(a)')
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:24.079Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
-  (anonymous function) (https://edge.fscdn.org/assets/js/fs-2ae9f688c785932c66c919d5e298ddf9.js:1)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:24.357Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: TypeError: undefined is not an object (evaluating 'a.length')
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:24.357Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
-  each (https://edge.fscdn.org/assets/js/1.8.2/jquery-1.8.2.min-cfa9051cc0b05eb519f1e16b2a6645d7.js:1)
-  n (:12)
-  success (:12)
-  l (https://edge.fscdn.org/assets/js/1.8.2/jquery-1.8.2.min-cfa9051cc0b05eb519f1e16b2a6645d7.js:1)
-  fireWith (https://edge.fscdn.org/assets/js/1.8.2/jquery-1.8.2.min-cfa9051cc0b05eb519f1e16b2a6645d7.js:1)
-  d (https://edge.fscdn.org/assets/js/1.8.2/jquery-1.8.2.min-cfa9051cc0b05eb519f1e16b2a6645d7.js:1)
-  d (https://edge.fscdn.org/assets/js/1.8.2/jquery-1.8.2.min-cfa9051cc0b05eb519f1e16b2a6645d7.js:1)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:24.384Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - msg: TypeError: undefined is not an object (evaluating 'c.searchHits.length')
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-11-23T20:50:24.384Z] Session [73861b10-b1be-11e6-8e35-b3ad7388d328] - page.onError - stack:
-  prepareResults (undefined:12)
-  E (:12)
-  success (:12)
-  l (https://edge.fscdn.org/assets/js/1.8.2/jquery-1.8.2.min-cfa9051cc0b05eb519f1e16b2a6645d7.js:1)
-  fireWith (https://edge.fscdn.org/assets/js/1.8.2/jquery-1.8.2.min-cfa9051cc0b05eb519f1e16b2a6645d7.js:1)
-  d (https://edge.fscdn.org/assets/js/1.8.2/jquery-1.8.2.min-cfa9051cc0b05eb519f1e16b2a6645d7.js:1)
-  d (https://edge.fscdn.org/assets/js/1.8.2/jquery-1.8.2.min-cfa9051cc0b05eb519f1e16b2a6645d7.js:1)
-
-  phantomjs://platform/console++.js:263 in error
-[INFO  - 2016-11-23T20:55:21.219Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             [INFO  - 2016-11-23T20:52:44.877Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+  (anonymous function) (https://edge.fscdn[INFO  - 2016-11-24T04:22:36.726Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T04:27:36.726Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T04:32:36.726Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T04:37:36.726Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T04:42:36.727Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T04:47:36.726Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T04:52:36.726Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T04:57:36.727Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T05:02:36.727Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T05:07:36.727Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T05:12:36.729Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T05:17:36.729Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T05:22:36.729Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T05:27:36.730Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T05:32:36.730Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T05:37:36.730Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T05:42:36.732Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T05:47:36.731Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T05:52:36.732Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T05:57:36.744Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T06:02:36.744Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T06:07:36.744Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T06:12:36.744Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T06:17:36.744Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T06:22:36.744Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T06:27:36.744Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T06:32:36.744Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T06:37:36.745Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T06:42:36.745Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T06:47:36.745Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T06:52:36.746Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T06:57:36.746Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T07:02:36.746Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T07:07:36.746Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T07:12:36.746Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T07:17:36.746Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T07:22:36.748Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T07:27:36.761Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T07:32:36.761Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T07:37:36.781Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T07:42:36.790Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T07:47:36.790Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T07:52:36.791Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T07:57:36.793Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T08:02:36.793Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T08:07:36.793Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T08:12:36.793Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T08:17:36.793Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T08:22:36.793Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T08:27:36.793Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T08:32:36.797Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T08:37:36.797Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T08:42:36.797Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T08:47:36.797Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T08:52:36.797Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T08:57:36.797Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T09:02:36.806Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T09:07:36.806Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T09:12:36.809Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T09:17:36.808Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T09:22:36.808Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T09:27:36.808Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T09:32:36.809Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T09:37:36.809Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T09:42:36.816Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T09:47:36.816Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T09:52:36.816Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T09:57:36.825Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T10:02:36.825Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T10:07:36.825Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T10:12:36.825Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T10:17:36.827Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T10:22:36.828Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T10:27:36.833Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T10:32:36.833Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T10:37:36.833Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T10:42:36.833Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T10:47:36.834Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T10:52:36.833Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T10:57:36.847Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T11:02:36.847Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T11:07:36.853Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T11:12:36.853Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T11:17:36.854Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T11:22:36.854Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T11:27:36.854Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T11:32:36.854Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T11:37:36.854Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T11:42:36.862Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T11:47:36.879Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T11:52:36.878Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T11:57:36.879Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T12:02:36.884Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T12:07:36.893Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T12:12:36.897Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T12:17:36.897Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T12:22:36.897Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T12:27:36.898Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T12:32:36.898Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T12:37:36.898Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T12:42:36.898Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T12:47:36.899Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T12:52:36.899Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T12:57:36.899Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T13:02:36.909Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T13:07:36.909Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T13:12:36.909Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T13:17:36.913Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T13:22:36.914Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T13:27:36.914Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T13:32:36.914Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T13:37:36.922Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T13:42:36.925Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T13:47:36.925Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T13:52:36.931Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T13:57:36.936Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T14:02:36.941Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T14:07:36.941Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T14:12:36.941Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T14:17:36.941Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T14:22:36.941Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T14:27:36.942Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T14:32:36.950Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T14:37:36.970Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T14:42:36.970Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T14:47:36.980Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T14:52:36.980Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T14:57:36.988Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T15:02:36.988Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T15:07:36.988Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T15:12:36.988Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T15:17:36.994Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T15:22:36.994Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T15:27:36.994Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T15:32:36.997Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T15:37:36.997Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T15:42:36.998Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T15:47:36.998Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T15:52:37.000Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T15:57:37.000Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T16:02:37.000Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T16:07:37.001Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T16:12:37.010Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T16:17:37.010Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T16:22:37.010Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T16:27:37.010Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T16:32:37.014Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T16:37:37.014Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T16:42:37.014Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T16:47:37.022Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T16:52:37.022Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T16:57:37.022Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T17:02:37.023Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T17:07:37.025Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T17:12:37.026Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T17:17:37.033Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T17:22:37.033Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T17:27:37.033Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T17:32:37.033Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T17:37:37.033Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T17:42:37.048Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T17:47:37.048Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T17:52:37.048Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T17:57:37.056Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T18:02:37.056Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T18:07:37.057Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T18:12:37.057Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T18:17:37.060Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T18:22:37.068Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T18:27:37.068Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T18:32:37.068Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T18:37:37.073Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T18:42:37.073Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T18:47:37.073Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T18:52:37.073Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T18:57:37.073Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T19:02:37.074Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T19:07:37.074Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T19:12:37.082Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T19:17:37.087Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T19:22:37.087Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T19:27:37.088Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T19:32:37.088Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T19:37:37.088Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T19:42:37.088Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T19:47:37.097Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T19:52:37.101Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T19:57:37.101Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T20:02:37.101Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T20:07:37.105Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T20:12:37.114Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T20:17:37.114Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T20:22:37.128Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T20:27:37.128Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T20:32:37.128Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T20:37:37.135Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T20:42:37.134Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T20:47:37.142Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T20:52:37.145Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T20:57:37.145Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T21:02:37.148Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T21:07:37.148Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T21:12:37.155Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T21:17:37.163Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T21:22:37.163Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T21:27:37.164Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T21:32:37.168Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T21:37:37.172Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T21:42:37.172Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T21:47:37.172Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T21:52:37.172Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T21:57:37.193Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T22:02:37.204Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T22:07:37.204Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T22:12:37.204Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T22:17:37.204Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T22:22:37.204Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T22:27:37.204Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T22:32:37.213Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T22:37:37.213Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T22:42:37.214Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T22:47:37.214Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T22:52:37.214Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T22:57:37.214Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T23:02:37.214Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T23:07:37.214Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T23:12:37.214Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T23:17:37.223Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T23:22:37.232Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T23:27:37.232Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T23:32:37.232Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T23:37:37.232Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T23:42:37.232Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T23:47:37.232Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T23:52:37.232Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-24T23:57:37.232Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T00:02:37.232Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T00:07:37.232Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T00:12:37.233Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T00:17:37.233Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T00:22:37.233Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T00:27:37.233Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T00:32:37.233Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T00:37:37.233Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T00:42:37.233Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T00:47:37.241Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T00:52:37.241Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T00:57:37.241Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T01:02:37.241Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T01:07:37.243Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T01:12:37.243Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T01:17:37.243Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T01:22:37.243Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T01:27:37.243Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T01:32:37.243Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T01:37:37.244Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T01:42:37.244Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T01:47:37.244Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T01:52:37.244Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T01:57:37.244Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T02:02:37.244Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T02:07:37.244Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T02:12:37.244Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T02:17:37.244Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T02:22:37.244Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T02:27:37.244Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T02:32:37.244Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T02:37:37.244Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T02:42:37.244Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T02:47:37.244Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T02:52:37.244Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T02:57:37.244Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:02:37.244Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:07:37.245Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:12:37.245Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:17:37.245Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:22:37.245Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:27:37.245Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:32:37.245Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:37:37.245Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:42:37.245Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:47:37.245Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:52:37.245Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:57:37.246Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T04:02:37.246Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T04:07:37.246Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T04:12:37.246Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T04:17:37.246Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T04:22:37.246Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T04:27:37.246Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+ Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:38:52.791Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:43:52.791Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:48:52.791Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:53:52.791Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:58:52.791Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T04:03:52.791Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T04:08:52.792Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T04:13:52.792Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T04:18:52.792Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T04:23:52.793Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T04:28:52.792Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+eqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:04:52.120Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:09:52.121Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:14:52.121Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:19:52.121Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:24:52.121Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:29:52.121Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:34:52.121Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:39:52.121Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:44:52.122Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:49:52.122Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:54:52.122Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:59:52.122Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T04:04:52.122Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T04:09:52.132Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T04:14:52.136Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T04:19:52.136Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T04:24:52.136Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T04:29:52.136Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+:31:56.913Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:36:56.913Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:41:56.914Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:46:56.914Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:51:56.914Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T03:56:56.915Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T04:01:56.917Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T04:06:56.917Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T04:11:56.917Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T04:16:56.918Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T04:21:56.918Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T04:26:56.918Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-11-25T04:31:56.918Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
