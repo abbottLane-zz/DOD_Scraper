@@ -5,14 +5,19 @@ from selenium import webdriver
 from bs4 import BeautifulSoup
 from time import sleep
 
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver import DesiredCapabilities
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
 
 county="King%20county"
 year_span = "2011-2014"
-link = "https://familysearch.org/search/collection/results?count=20&query=%2Bdeath_place%3A%22"+county+"%22~%20%2Bdeath_year%3A"+year_span+"~&collection_id=1202535"
-# link= "https://www.google.com/search?client=ubuntu&channel=fs&q=test&ie=utf-8&oe=utf-8"
+#link = "https://familysearch.org/search/collection/results?count=20&query=%2Bdeath_place%3A%22"+county+"%22~%20%2Bdeath_year%3A"+year_span+"~&collection_id=1202535"
+link= "https://familysearch.org/search/records?count=75&query=%2Bdeath_place%3Aseattle~%20%2Bdeath_year%3A2010-2012~&collection_id=1202535"
+#link="https://familysearch.org/ark:/61903/1:1:JTL6-NY9"
 print "Executing Query: " + link
-print "pause"
 
 class TaleoJobScraper(object):
     def __init__(self):
@@ -20,25 +25,23 @@ class TaleoJobScraper(object):
         dcap["phantomjs.page.settings.userAgent"] = (
             "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/53 "
         )
-        #self.driver = webdriver.PhantomJS(desired_capabilities=dcap, service_args=['--ignore-ssl-errors=true', '--ssl-protocol=TLSv1'])
-        self.driver = webdriver.PhantomJS(desired_capabilities=dcap, service_args=['--ignore-ssl-errors=true', '--ssl-protocol=TLSv1'], executable_path=r"C:\Users\William\Downloads\phantomjs-2.1.1-windows\phantomjs-2.1.1-windows\bin\phantomjs.exe")
+        #self.driver = webdriver.PhantomJS(desired_capabilities=dcap, service_args=['--ignore-ssl-errors=true'])
+        self.driver = webdriver.Firefox(executable_path="/home/wlane/Applications/geckodriver")
         self.driver.set_window_size(1120, 550)
+
 
     def scrape_job_links(self):
         self.driver.get(link)
-
+        try:
+            WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.ID,"DataTables_Table_0")))
+        except TimeoutException:
+            print "A timeout occured!!"
         jobs = []
         pageno = 2
 
-        print "Wating 10 seconds....because otherwise this wont work..."
-        for i in range(10):
-            sleep(1)
-            print i+1
-
-
+        self.driver.save_screenshot('screen.png')
         while True:
             s = BeautifulSoup(self.driver.page_source, "html.parser")
-            self.driver.save_screenshot('screen.png')
             print s
             r = re.compile(r'https://familysearch\.org/ark:/\d+/.+')
 

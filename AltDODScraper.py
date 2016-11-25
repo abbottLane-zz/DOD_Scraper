@@ -5,7 +5,7 @@ from PyQt4.QtWebKit import *
 from lxml import html
 
 
-class Render(QWebPage="https://familysearch.org/search/collection/results?count=20&query=%2Bdeath_place%3Aseattle~%20%2Bdeath_year%3A2001-2003~&collection_id=1202535"):
+class Render(QWebPage):
     def __init__(self, url):
         self.app = QApplication(sys.argv)
         QWebPage.__init__(self)
@@ -16,3 +16,14 @@ class Render(QWebPage="https://familysearch.org/search/collection/results?count=
     def _loadFinished(self, result):
         self.frame = self.mainFrame()
         self.app.quit()
+
+url="https://familysearch.org/search/collection/results?count=20&query=%2Bdeath_place%3Aseattle~%20%2Bdeath_year%3A2001-2003~&collection_id=1202535"
+
+#url = 'http://pycoders.com/archive/'
+
+r = Render(url)
+result = r.frame.toHtml()
+print result.toAscii()
+#This step is important.Converting QString to Ascii for lxml to process
+archive_links = html.fromstring(str(result.toAscii()))
+print archive_links
