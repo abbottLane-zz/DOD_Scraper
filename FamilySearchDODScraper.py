@@ -14,17 +14,17 @@ from selenium.webdriver.support import expected_conditions as EC
 
 county="King%20county"
 year_span = "2011-2014"
-#link = "https://familysearch.org/search/collection/results?count=20&query=%2Bdeath_place%3A%22"+county+"%22~%20%2Bdeath_year%3A"+year_span+"~&collection_id=1202535"
-link= "https://familysearch.org/search/records?count=75&query=%2Bdeath_place%3Aseattle~%20%2Bdeath_year%3A2010-2012~&collection_id=1202535"
+count=75
+link = "https://familysearch.org/search/collection/results?count="+str(count)+"&query=%2Bdeath_place%3A%22"+county+"%22~%20%2Bdeath_year%3A"+year_span+"~&collection_id=1202535"
 #link="https://familysearch.org/ark:/61903/1:1:JTL6-NY9"
 print "Executing Query: " + link
 
-class TaleoJobScraper(object):
+class FamilySearchDODScraper(object):
     def __init__(self):
-        dcap = dict(DesiredCapabilities.PHANTOMJS)
-        dcap["phantomjs.page.settings.userAgent"] = (
-            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/53 "
-        )
+        # dcap = dict(DesiredCapabilities.PHANTOMJS)
+        # dcap["phantomjs.page.settings.userAgent"] = (
+        #     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/53 "
+        # )
         #self.driver = webdriver.PhantomJS(desired_capabilities=dcap, service_args=['--ignore-ssl-errors=true'])
         self.driver = webdriver.Firefox(executable_path="/home/wlane/Applications/geckodriver")
         self.driver.set_window_size(1120, 550)
@@ -32,10 +32,7 @@ class TaleoJobScraper(object):
 
     def scrape_job_links(self):
         self.driver.get(link)
-        try:
-            WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.ID,"DataTables_Table_0")))
-        except TimeoutException:
-            print "A timeout occured!!"
+        self.hey_driver_wait_for_load()
         jobs = []
         pageno = 2
 
@@ -50,23 +47,30 @@ class TaleoJobScraper(object):
                 tr = a.findParent('tr')
                 td = tr.findAll('td')
 
-                job = {}
-                job['title'] = a.text
-                job['url'] = urlparse.urljoin(link, a['href'])
-                job['location'] = td[1].text
-                jobs.append(job)
+                person = {}
+                person['title'] = a.text
+                person['url'] = urlparse.urljoin(link, a['href'])
+                person['location'] = td[1].text
+                jobs.append(person)
 
-            next_page_elem = self.driver.find_element_by_id('next')
+            next_page_elem = self.driver.find_element_by_link_text('Next')#find_element_by_id('paging')
             next_page_link = s.find('a', text='%d' % pageno)
 
             if next_page_link:
                 next_page_elem.click()
                 pageno += 1
-                sleep(.75)
+                sleep(5)
             else:
                 break
 
         return jobs
+
+    def hey_driver_wait_for_load(self):
+        try:
+            WebDriverWait(self.driver, 40).until(EC.presence_of_element_located((By.LINK_TEXT,"Next"))) #DataTables_Table_0
+            #sleep(5)
+        except TimeoutException:
+            print "A timeout occured!!"
 
     def scrape_job_descriptions(self, jobs):
         for job in jobs:
@@ -90,5 +94,5 @@ class TaleoJobScraper(object):
         self.driver.quit()
 
 if __name__ == '__main__':
-    scraper = TaleoJobScraper()
+    scraper = FamilySearchDODScraper()
     scraper.scrape()
