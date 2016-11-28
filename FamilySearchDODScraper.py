@@ -48,10 +48,12 @@ class FamilySearchDODScraper(object):
                 td = tr.findAll('td')
 
                 person = {}
-                person['title'] = a.text
+                person['name'] = a.text
                 person['url'] = urlparse.urljoin(link, a['href'])
-                person['location'] = td[1].text
+                person['data'] = td[2].text
                 jobs.append(person)
+            # for debug: early break
+            break
 
             next_page_elem = self.driver.find_element_by_link_text('Next')#find_element_by_id('paging')
             next_page_link = s.find('a', text='%d' % pageno)
