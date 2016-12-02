@@ -1,3 +1,4 @@
+import json
 import re
 import urlparse
 
@@ -12,10 +13,12 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-county="King%20county"
-year_span = "2011-2014"
+county="seattle"#"King%20county"
+year_span = "2011-2011"
 count=75
-link = "https://familysearch.org/search/collection/results?count="+str(count)+"&query=%2Bdeath_place%3A%22"+county+"%22~%20%2Bdeath_year%3A"+year_span+"~&collection_id=1202535"
+obit_collection="2333694"
+SS_master_death_collection = "1202535"
+link = "https://familysearch.org/search/collection/results?count="+str(count)+"&query=%2Bdeath_place%3A%22"+county+"%22~%20%2Bdeath_year%3A"+year_span+"~&collection_id="+obit_collection
 #link="https://familysearch.org/ark:/61903/1:1:JTL6-NY9"
 print "Executing Query: " + link
 
@@ -51,7 +54,9 @@ class FamilySearchDODScraper(object):
                 person['name'] = a.text
                 person['url'] = urlparse.urljoin(link, a['href'])
                 person['data'] = td[2].text
-                jobs.append(person)
+                person['relationships'] = td[3].text
+                if person['name'] != "":
+                    jobs.append(person)
             # for debug: early break
             break
 
@@ -89,11 +94,16 @@ class FamilySearchDODScraper(object):
             sleep(.75)
 
     def scrape(self):
-        jobs = self.scrape_job_links()
-        for job in jobs:
-            print job
+        people = self.scrape_job_links()
+        self.write_people(people)
+        for person in people:
+            print person
 
         self.driver.quit()
+
+    def write_people(self, people):
+        with open('ObitCollectionExamples.out', 'w') as outfile:
+            json.dump(people, outfile, indent=4, sort_keys=True)
 
 if __name__ == '__main__':
     scraper = FamilySearchDODScraper()
