@@ -7,7 +7,6 @@ from bs4 import BeautifulSoup
 from time import sleep
 
 from selenium.common.exceptions import TimeoutException
-from selenium.webdriver import DesiredCapabilities
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -22,16 +21,16 @@ link = "https://familysearch.org/search/collection/results?count="+str(count)+"&
 #link="https://familysearch.org/ark:/61903/1:1:JTL6-NY9"
 print "Executing Query: " + link
 
+
+def write_people(people):
+    with open('ObitCollectionExamples.out', 'w') as outfile:
+        json.dump(people, outfile, indent=4, sort_keys=True)
+
+
 class FamilySearchDODScraper(object):
     def __init__(self):
-        # dcap = dict(DesiredCapabilities.PHANTOMJS)
-        # dcap["phantomjs.page.settings.userAgent"] = (
-        #     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/53 "
-        # )
-        #self.driver = webdriver.PhantomJS(desired_capabilities=dcap, service_args=['--ignore-ssl-errors=true'])
         self.driver = webdriver.Firefox(executable_path="/home/wlane/Applications/geckodriver")
         self.driver.set_window_size(1120, 550)
-
 
     def scrape_job_links(self):
         self.driver.get(link)
@@ -57,10 +56,8 @@ class FamilySearchDODScraper(object):
                 person['relationships'] = td[3].text
                 if person['name'] != "":
                     jobs.append(person)
-            # for debug: early break
-            break
 
-            next_page_elem = self.driver.find_element_by_link_text('Next')#find_element_by_id('paging')
+            next_page_elem = self.driver.find_element_by_link_text('Next')
             next_page_link = s.find('a', text='%d' % pageno)
 
             if next_page_link:
@@ -75,7 +72,6 @@ class FamilySearchDODScraper(object):
     def hey_driver_wait_for_load(self):
         try:
             WebDriverWait(self.driver, 40).until(EC.presence_of_element_located((By.LINK_TEXT,"Next"))) #DataTables_Table_0
-            #sleep(5)
         except TimeoutException:
             print "A timeout occured!!"
 
@@ -95,15 +91,12 @@ class FamilySearchDODScraper(object):
 
     def scrape(self):
         people = self.scrape_job_links()
-        self.write_people(people)
+        write_people(people)
         for person in people:
             print person
 
         self.driver.quit()
 
-    def write_people(self, people):
-        with open('ObitCollectionExamples.out', 'w') as outfile:
-            json.dump(people, outfile, indent=4, sort_keys=True)
 
 if __name__ == '__main__':
     scraper = FamilySearchDODScraper()
