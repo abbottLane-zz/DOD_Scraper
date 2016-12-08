@@ -13,23 +13,22 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 county="seattle"#"King%20county"
-year_span = "2011-2011"
+year_span = "2002-2002"
 count=75
 obit_collection="2333694"
 SS_master_death_collection = "1202535"
 link = "https://familysearch.org/search/collection/results?count="+str(count)+"&query=%2Bdeath_place%3A%22"+county+"%22~%20%2Bdeath_year%3A"+year_span+"~&collection_id="+obit_collection
-#link="https://familysearch.org/ark:/61903/1:1:JTL6-NY9"
 print "Executing Query: " + link
 
 
 def write_people(people):
-    with open('ObitCollectionExamples.out', 'w') as outfile:
+    with open('outputs/ObitCollectionExamples.out', 'w') as outfile:
         json.dump(people, outfile, indent=4, sort_keys=True)
 
 
 class FamilySearchDODScraper(object):
     def __init__(self):
-        self.driver = webdriver.Firefox(executable_path="/home/wlane/Applications/geckodriver")
+        self.driver = webdriver.Firefox(executable_path="/home/wlane/Applications/geckodriver", log_path="outputs/geckodriver.log")
         self.driver.set_window_size(1120, 550)
 
     def scrape_job_links(self):
@@ -38,10 +37,9 @@ class FamilySearchDODScraper(object):
         jobs = []
         pageno = 2
 
-        self.driver.save_screenshot('screen.png')
+        self.driver.save_screenshot('outputs/screen.png')
         while True:
             s = BeautifulSoup(self.driver.page_source, "html.parser")
-            print s
             r = re.compile(r'https://familysearch\.org/ark:/\d+/.+')
 
             row_results = s.find_all('a', href=r)
@@ -56,6 +54,9 @@ class FamilySearchDODScraper(object):
                 person['relationships'] = td[3].text
                 if person['name'] != "":
                     jobs.append(person)
+
+            # #debug: early break for testing
+            #break
 
             next_page_elem = self.driver.find_element_by_link_text('Next')
             next_page_link = s.find('a', text='%d' % pageno)
@@ -92,12 +93,10 @@ class FamilySearchDODScraper(object):
     def scrape(self):
         people = self.scrape_job_links()
         write_people(people)
-        for person in people:
-            print person
-
         self.driver.quit()
+        return people
 
 
 if __name__ == '__main__':
     scraper = FamilySearchDODScraper()
-    scraper.scrape()
+    people = scraper.scrape()
